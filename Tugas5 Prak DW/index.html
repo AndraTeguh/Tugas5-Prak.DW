@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Buku | Aplikasi Buku Favorit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplikasi Daftar Buku Favorit</h1>
+
+      <!-- Input Nama Pengguna -->
+      <div id="session-container" class="card">
+        <div class="name-input-group">
+          <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" />
+          <button id="btnSimpanNama">Simpan Nama</button>
+        </div>
+        <h3 id="salamPengguna"></h3>
+      </div>
+
+      <!-- Form Tambah Buku -->
+      <form id="form-tambah-buku" class="card">
+        <h2>Tambah Buku</h2>
+        <div class="form-group">
+          <input type="text" id="judul" placeholder="Judul Buku" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="penulis" placeholder="Penulis" required />
+        </div>
+        <div class="form-group">
+          <input type="number" id="tahun" placeholder="Tahun Terbit" required />
+        </div>
+        <button type="submit">Tambah Buku</button>
+      </form>
+
+      <!-- Daftar Buku -->
+      <section class="card">
+        <h2>Daftar Buku</h2>
+        <div id="daftar-buku" class="book-list"></div>
+      </section>
+
+      <!-- Buku Favorit -->
+      <section class="card">
+        <h2>Buku Favorit</h2>
+        <div id="buku-favorit" class="book-favorites"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
